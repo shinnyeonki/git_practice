@@ -1,0 +1,33 @@
+if has("syntax")
+    syntax on
+endif
+set showcmd "입력 명령 표시
+set number " 라인 넘버 표시
+set nuw=2 " number witch
+set smartindent 
+set shiftwidth=4
+set tabstop=4 " tab 사이즈
+set list lcs=trail:·,tab:├─ " 들여쓰기 시 디자인 설정 
+set cursorline
+set hlsearch " highlite search
+set ignorecase " ignore case
+set mouse=a
+
+colorscheme slate
+hi search ctermbg=130
+hi CursorLine cterm=NONE ctermbg=235
+hi CursorLine cterm=bold ctermbg=235
+
+" nore map 설정
+noremap! { {}O
+noremap! java<tab> public class Hello{public static void main(string args[]){}}
+noremap! cpp<tab> #include <iostream>using namespace std;int main(){return 0;}kO
+noremap! ma<tab> #include <stdio.h>int main(){return 0;}kO
+noremap! in<tab> #include <>hi
+noremap! pr<tab> printf("",);hhhi
+noremap! sc<tab> scanf("", &);5hi
+noremap! cl<tab> class {public:protected:private:};h%i
+noremap! fo<tab> for ( ; ; ){}%h%la
+noremap! wh<tab> while (  ){}%h%la
+noremap! if<tab> if ( ){} else {}kka
+noremap! sw<tab> switch (  ){case 1:break;case 2:break;case 3:break;default:}%hhix
