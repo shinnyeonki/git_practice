@@ -1,6 +1,4 @@
-if has("syntax")
-    syntax on
-endif
+syntax on
 set showcmd "입력 명령 표시
 set number " 라인 넘버 표시
 set nuw=2 " number witch
@@ -20,7 +18,7 @@ hi CursorLine cterm=bold ctermbg=235
 
 " nore map 설정
 noremap! { {}O
-noremap! java<tab> public class Hello{public static void main(string args[]){}}
+noremap! java<tab> public class Hello{public static void main(String[] args){}}kki<tab><tab>
 noremap! cpp<tab> #include <iostream>using namespace std;int main(){return 0;}kO
 noremap! ma<tab> #include <stdio.h>int main(){return 0;}kO
 noremap! in<tab> #include <>hi
@@ -31,3 +29,6 @@ noremap! fo<tab> for ( ; ; ){}%h%la
 noremap! wh<tab> while (  ){}%h%la
 noremap! if<tab> if ( ){} else {}kka
 noremap! sw<tab> switch (  ){case 1:break;case 2:break;case 3:break;default:}%hhix
+:command W w
+:command Wq wq
+:command WQ wq
