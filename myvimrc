@@ -21,7 +21,7 @@ noremap! { {}O
 noremap! java<tab> public class Hello{public static void main(String[] args){}}kki<tab><tab>
 noremap! cpp<tab> #include <iostream>using namespace std;int main(){return 0;}kO
 noremap! ma<tab> #include <stdio.h>int main(){return 0;}kO
-noremap! in<tab> #include <>hi
+noremap! in<tab> #include <>i
 noremap! pr<tab> printf("",);hhhi
 noremap! sc<tab> scanf("", &);5hi
 noremap! cl<tab> class {public:protected:private:};h%i
